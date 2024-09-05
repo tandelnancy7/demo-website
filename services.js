@@ -4,28 +4,28 @@
         event_name: 'Tech Conference 2024',
         event_date: '2024-10-15',
         event_description: 'A conference for tech enthusiasts and professionals.',
-        photo: 'https:via.placeholder.com/150'
+        photo: 'https://tse2.mm.bing.net/th?id=OIP.NqY3rNMnx2NXYo3KJfg43gHaHa&pid=Api&P=0&h=180'
       },
       {
         _id: '2',
         event_name: 'Art Gallery Exhibition',
         event_date: '2024-11-20',
         event_description: 'An exhibition showcasing modern art from local artists.',
-        photo: 'https:via.placeholder.com/150'
+        photo: 'https://tse3.mm.bing.net/th?id=OIP.PztowP3ljup0SM75tkDimQHaHa&pid=Api&P=0&h=180'
       },
       {
         _id: '3',
         event_name: 'Food Festival',
         event_date: '2024-12-05',
         event_description: 'A festival featuring food from around the world.',
-        photo: 'https:via.placeholder.com/150'
+        photo: 'https://tse4.mm.bing.net/th?id=OIP.XSZAFm-5JI7nriDLwZqRQQHaE7&pid=Api&P=0&h=180'
       },
       {
         _id: '4',
         event_name: 'Tech Conference 2024',
         event_date: '2024-10-15',
         event_description: 'A conference for tech enthusiasts and professionals.',
-        photo: 'https:via.placeholder.com/150'
+        photo: 'https://tse4.mm.bing.net/th?id=OIP.Ymp2QykpzP3rfqFkAzDjHgHaFD&pid=Api&P=0&h=180'
       },
     
     ];
