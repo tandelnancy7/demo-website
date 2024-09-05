@@ -1,0 +1,79 @@
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main content styling */
+.about-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Team section styling */
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1 1 300px; /* Responsive flex item */
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.member-info h3 {
+    margin-bottom: 5px;
+}
+
+.member-info p {
+    color: #666;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Hidden info initially */
+.member-info {
+    display: none;
+}
+
+/* Show info when visible class is added */
+.member-info.visible {
+    display: block;
+}

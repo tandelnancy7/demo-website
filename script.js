@@ -1,74 +1,61 @@
-const dummyEvents = [
-    {
-      _id: '1',
-      event_name: 'Tech Conference 2024',
-      event_date: '2024-10-15',
-      event_description: 'A conference for tech enthusiasts and professionals.',
-      photo: 'https://via.placeholder.com/150'
-    },
-    {
-      _id: '2',
-      event_name: 'Art Gallery Exhibition',
-      event_date: '2024-11-20',
-      event_description: 'An exhibition showcasing modern art from local artists.',
-      photo: 'https://via.placeholder.com/150'
-    },
-    {
-      _id: '3',
-      event_name: 'Food Festival',
-      event_date: '2024-12-05',
-      event_description: 'A festival featuring food from around the world.',
-      photo: 'https://via.placeholder.com/150'
-    },
-    {
-      _id: '4',
-      event_name: 'Tech Conference 2024',
-      event_date: '2024-10-15',
-      event_description: 'A conference for tech enthusiasts and professionals.',
-      photo: 'https://via.placeholder.com/150'
-    },
-    {
-      _id: '5',
-      event_name: 'Art Gallery Exhibition',
-      event_date: '2024-11-20',
-      event_description: 'An exhibition showcasing modern art from local artists.',
-      photo: 'https://via.placeholder.com/150'
-    },
-    {
-      _id: '6',
-      event_name: 'Food Festival',
-      event_date: '2024-12-05',
-      event_description: 'A festival featuring food from around the world.',
-      photo: 'https://via.placeholder.com/150'
-    }
-  ];
+
+document.getElementById('menuToggle').addEventListener('click', function() {
+  const navLinks = document.getElementById('navLinks');
+  navLinks.classList.toggle('active');
+});
+
+document.getElementById('alertButton').addEventListener('click', function() {
+  alert('Button was clicked!');
+});
+
+
+// script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+  const image = document.querySelector('.image-content img');
   
-  const searchInput = document.getElementById('search');
-  const eventList = document.getElementById('event-list');
-  
-  function renderEvents(events) {
-    eventList.innerHTML = '';
-    events.forEach(event => {
-      const eventCard = document.createElement('div');
-      eventCard.className = 'event-card';
-      eventCard.innerHTML = `
-        <h2>${event.event_name}</h2>
-        <img src="${event.photo}" alt="${event.event_name}" />
-        <p><strong>Date:</strong> ${event.event_date}</p>
-        <p><strong>Description:</strong> ${event.event_description}</p>
-      `;
-      eventList.appendChild(eventCard);
-    });
-  }
-  
-  searchInput.addEventListener('input', (e) => {
-    const searchTerm = e.target.value.toLowerCase();
-    const filteredEvents = dummyEvents.filter(event =>
-      event.event_name.toLowerCase().includes(searchTerm)
-    );
-    renderEvents(filteredEvents);
+  image.addEventListener('click', () => {
+      console.log('Image clicked!');
   });
-  
-  // Initial render
-  renderEvents(dummyEvents);
-  
+});
+
+
+// script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+  const teamMembers = document.querySelectorAll('.team-member');
+
+  teamMembers.forEach(member => {
+      member.addEventListener('click', () => {
+          const info = member.querySelector('.member-info');
+          info.classList.toggle('visible');
+      });
+  });
+});
+
+// script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contactForm');
+  const responseMessage = document.getElementById('responseMessage');
+
+  form.addEventListener('submit', (event) => {
+      event.preventDefault(); // Prevent default form submission
+
+      const formData = new FormData(form);
+      const name = formData.get('name');
+      const email = formData.get('email');
+      const message = formData.get('message');
+
+      // Simple form validation
+      if (name && email && message) {
+          responseMessage.textContent = 'Thank you for your message! We will get back to you soon.';
+          responseMessage.style.color = 'green';
+          form.reset(); // Reset the form fields
+      } else {
+          responseMessage.textContent = 'Please fill out all fields.';
+          responseMessage.style.color = 'red';
+      }
+  });
+});
+

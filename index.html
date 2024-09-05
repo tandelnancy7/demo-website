@@ -7,15 +7,110 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="search-bar">
-      <input type="text" id="search" placeholder="Search Events Here..." />
-    </div>
-    <div class="event-list" id="event-list">
-      <!-- Events will be dynamically inserted here -->
-    </div>
+ 
+      <header>
+          <nav>
+              <div class="logo">
+                  <h1>MySite</h1>
+              </div>
+              <div class="menu-toggle" id="menuToggle">
+                  &#9776; <!-- Hamburger icon -->
+              </div>
+              <ul class="nav-links" id="navLinks">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </nav>
+      </header>
+    
+        <main class="grid-container">
+            <div class="text-content">
+                <h1>Welcome to Our Website</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+                <p>Curabitur ac lorem in mauris vestibulum feugiat. Nulla facilisi. Proin nec nisl at sem aliquet hendrerit.</p>
+            </div>
+            <div class="image-content">
+                <img src="./images/th (1).jpeg" alt="Descriptive Alt Text">
+            </div>
+        </main>
 
-    <script src="script.js"></script>
-  </div>
+        <main class="about-container">
+            <section class="mission">
+                <h2>Our Mission</h2>
+                <p>Our mission is to deliver high-quality products and services that exceed customer expectations. We strive to innovate and lead in our industry through dedication and excellence.</p>
+            </section>
+            <section class="team">
+                <h2>Meet the Team</h2>
+                <div class="team-member">
+                    <img src="./images/th (1).jpeg" alt="Team Member 1">
+                    <div class="member-info">
+                        <h3>Jane Doe</h3>
+                        <p>CEO & Founder</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="./images/th (1).jpeg" alt="Team Member 2">
+                    <div class="member-info">
+                        <h3>John Smith</h3>
+                        <p>Lead Developer</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="container">
+            <div class="search-bar">
+              <input type="text" id="search" placeholder="Search Events Here..." />
+            </div>
+            <div class="event-list" id="event-list">
+              
+            </div>
+        
+            <script src="services.js"></script>
+          </div>
+
+          <header>
+            <h1 class="contact-header">Contact Us</h1>
+        </header>
+        <main class="contact-container">
+            <section class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>If you have any questions, feel free to reach out to us using the form below or through our contact details.</p>
+                <ul>
+                    <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                    <li>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                </ul>
+            </section>
+            <section class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                    <div id="responseMessage" class="response-message"></div>
+                </form>
+            </section>
+        </main>
+        
+<!-- 
+      <footer>
+          <p>Footer &copy; 2024</p>
+      </footer> -->
+      <script src="script.js"></script>
+
+
+
 </body>
 </html>
